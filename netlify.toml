@@ -2,8 +2,8 @@
   # Build command for Nuxt 3
   command = "npm run build"
   
-  # Publish directory for Nuxt 3 
-  publish = ".output/public"
+  # Publish directory for Nuxt 3 - using actual output directory
+  publish = "dist"
 
 [build.environment]
   # Node.js version - Updated to Node 20 for Nuxt 3.18.1 compatibility
