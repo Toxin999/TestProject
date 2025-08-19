@@ -9,11 +9,11 @@
   functions = ".output/server"
 
 [build.environment]
-  # Node.js version
-  NODE_VERSION = "18"
+  # Node.js version - Updated to Node 20 for Nuxt 3.18.1 compatibility
+  NODE_VERSION = "20"
   
   # NPM version (optional)
-  NPM_VERSION = "9"
+  NPM_VERSION = "10"
 
 # Redirects for SPA mode (if needed)
 [[redirects]]
