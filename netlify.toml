@@ -1,0 +1,56 @@
+[build]
+  # Build command for Nuxt 3
+  command = "npm run build"
+  
+  # Publish directory for Nuxt 3 static generation
+  publish = ".output/public"
+  
+  # Functions directory for Nuxt 3 server functions
+  functions = ".output/server"
+
+[build.environment]
+  # Node.js version
+  NODE_VERSION = "18"
+  
+  # NPM version (optional)
+  NPM_VERSION = "9"
+
+# Redirects for SPA mode (if needed)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin"]}
+
+# Headers for better performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/_nuxt/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache fonts
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Environment variables (example - you can set these in Netlify UI instead)
+# [context.production.environment]
+#   NODE_ENV = "production"
+
+# Deploy previews configuration
+[context.deploy-preview]
+  command = "npm run build"
+
+# Branch deploys configuration  
+[context.branch-deploy]
+  command = "npm run build"

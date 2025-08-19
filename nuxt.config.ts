@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   pages: true, // Explicitly enable pages directory
   ssr: true,
 
+  // Netlify deployment configuration
+  nitro: {
+    preset: 'netlify'
+  },
+
   css: [
     'vuetify/lib/styles/main.sass',
     '@mdi/font/css/materialdesignicons.min.css'
