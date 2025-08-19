@@ -72,7 +72,7 @@ function formatTime(timeString) {
             <tr v-for="item in history" :key="item.id">
               <td class="text-center">
                 <v-chip color="primary" variant="tonal" size="small">
-                  {{ item.a }}
+                  {{ item.a.toLocaleString() }}
                 </v-chip>
               </td>
               <td class="text-center">
@@ -87,7 +87,7 @@ function formatTime(timeString) {
               </td>
               <td class="text-center">
                 <v-chip color="primary" variant="tonal" size="small">
-                  {{ item.b }}
+                  {{ item.b.toLocaleString() }}
                 </v-chip>
               </td>
               <td class="text-center">
@@ -96,7 +96,7 @@ function formatTime(timeString) {
                   variant="elevated" 
                   size="small"
                 >
-                  <strong>{{ item.result }}</strong>
+                  <strong>{{ item.result.toLocaleString() }}</strong>
                 </v-chip>
               </td>
               <td class="text-center">

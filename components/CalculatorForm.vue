@@ -78,7 +78,7 @@ function calculate() {
     </v-card-title>
     
     <v-card-text>
-      <v-row align="center" justify="center" class="mt-4">
+      <v-row align="center" justify="center" class="mt-4" >
         <v-col cols="12" sm="3">
           <v-text-field
             v-model.number="a"
@@ -90,7 +90,7 @@ function calculate() {
           />
         </v-col>
         
-        <v-col cols="12" sm="3">
+        <v-col cols="12" sm="4">
           <v-select
             v-model="method"
             :items="methodOptions"
@@ -112,18 +112,20 @@ function calculate() {
           />
         </v-col>
         
-        <v-col cols="12" sm="3">
-          <v-btn
+        <v-col cols="12" sm="3" class="pt-0" >
+          <div >
+            <v-btn
             :disabled="!canCalculate"
             color="primary"
-            size="large"
+          
             variant="elevated"
             block
             @click="calculate"
           >
-            <v-icon left>mdi-equal</v-icon>
+            
             Calculate
           </v-btn>
+          </div>
         </v-col>
       </v-row>
       
@@ -132,16 +134,16 @@ function calculate() {
       <v-fade-transition>
         <v-alert
           v-if="result !== null"
-          type="success"
+         color="success"
           variant="tonal"
           prominent
           class="text-center"
         >
           <template #title>
-            <v-icon left>mdi-check-circle</v-icon>
-            Result
+           
+            Result:
           </template>
-          <div class="text-h4 mt-2">{{ result }}</div>
+          <div class="text-h4 mt-2">{{ result.toLocaleString() }}</div>
         </v-alert>
       </v-fade-transition>
     </v-card-text>
