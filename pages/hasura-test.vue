@@ -39,8 +39,8 @@
             <!-- Books List -->
             <div v-if="!loading && !error && books.length > 0" class="mt-4">
               <v-card
-                v-for="book in books"
-                :key="book.admin_id"
+                v-for="(book, index) in books"
+                :key="index"
                 class="mb-3"
                 elevation="2"
               >
@@ -94,25 +94,27 @@
   </v-container>
 </template>
 
-<script setup lang="ts">
-import { GET_BOOKS, type BooksQueryResponse } from '~/types/hasura'
+<script setup>
+// GraphQL Query
+const queryString = `
+query MyQuery {
+  books {
+    book_cost
+    admin_id
+  }
+}
+`
 
 // Runtime config
 const config = useRuntimeConfig()
 
-// GraphQL client
-const { query } = useGraphQL()
-
 // Reactive data
-const books = ref<BooksQueryResponse['books']>([])
+const books = ref([])
 const loading = ref(false)
-const error = ref<string | null>(null)
+const error = ref(null)
 
 // Computed
 const hasAdminSecret = computed(() => !!config.public.hasuraAdminSecret)
-
-// Query string for display
-const queryString = GET_BOOKS
 
 // Functions
 const clearError = () => {
@@ -124,8 +126,10 @@ const fetchBooks = async () => {
   error.value = null
   
   try {
-    const response = await query<BooksQueryResponse>(GET_BOOKS)
-    books.value = response.books
+    // Use the GraphQL composable
+    const { query } = useGraphQL()
+    const response = await query(queryString)
+    books.value = response.books || []
   } catch (err) {
     error.value = err instanceof Error ? err.message : 'Failed to fetch books'
     console.error('Error fetching books:', err)
