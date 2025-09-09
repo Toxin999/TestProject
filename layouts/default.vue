@@ -4,28 +4,10 @@ const drawer = ref(true)
 
 const navigationItems = [
   {
-    title: 'navigation.dashboard',
-    icon: 'mdi-view-dashboard',
-    to: '/dashboard',
-    color: 'primary'
-  },
-  {
-    title: 'navigation.tasks',
-    icon: 'mdi-clipboard-text',
-    to: '/tasks',
-    color: 'orange'
-  },
-  {
     title: 'Hasura Test',
     icon: 'mdi-database',
     to: '/hasura-test',
     color: 'green'
-  },
-  {
-    title: 'navigation.settings',
-    icon: 'mdi-cog',
-    to: '/settings',
-    color: 'info'
   }
 ]
 

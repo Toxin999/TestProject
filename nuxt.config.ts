@@ -13,8 +13,8 @@ export default defineNuxtConfig({
   // Runtime configuration for Hasura
   runtimeConfig: {
     public: {
-      hasuraUrl: process.env.HASURA_GRAPHQL_ENDPOINT || 'https://your-hasura-app.hasura.app/v1/graphql',
-      hasuraAdminSecret: process.env.HASURA_ADMIN_SECRET || ''
+      hasuraUrl: process.env.MY_HASURA_URL ,
+      hasuraAdminSecret: process.env.MY_HASURA_SECRET || ''
     }
   },
 
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n'
   ],
 
-  // i18n configuration
+  // Separate i18n configuration
   i18n: {
     vueI18n: './i18n.config.ts',
     locales: [

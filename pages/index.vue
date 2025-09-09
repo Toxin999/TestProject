@@ -30,7 +30,8 @@ const technologies = [
   { name: 'Nuxt 3', icon: 'mdi-nuxt', color: 'success' },
   { name: 'Vue 3', icon: 'mdi-vuejs', color: 'success' },
   { name: 'Vuetify', icon: 'mdi-vuetify', color: 'primary' },
-  { name: 'TypeScript', icon: 'mdi-language-typescript', color: 'info' }
+  { name: 'GraphQL', icon: 'mdi-graphql', color: 'purple' },
+  { name: 'Hasura', icon: 'mdi-database', color: 'orange' }
 ]
 </script>
 
@@ -52,14 +53,14 @@ const technologies = [
               {{ $t('home.description') }}
             </div>
             <v-btn
-              to="/tasks"
+              to="/hasura-test"
               color="primary"
               size="large"
               variant="elevated"
-              prepend-icon="mdi-clipboard-text"
+              prepend-icon="mdi-database"
               class="ma-2"
             >
-              {{ $t('home.tryTasks') }}
+              Test Hasura GraphQL
             </v-btn>
           </v-card-text>
         </v-card>
