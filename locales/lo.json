@@ -1,0 +1,283 @@
+{
+  "app": {
+    "title": "KrakenTasks",
+    "subtitle": "ການຈັດການວຽກງານ ແລະອື່ນໆ",
+    "version": "ເວີຊັນ 1.0.0"
+  },
+  "navigation": {
+    "dashboard": "ໜ້າຫຼັກ",
+    "tasks": "ວຽກງານ",
+    "settings": "ການຕັ້ງຄ່າ ແລະໂປຣໄຟລ໌",
+    "home": "ໜ້າແຮກ",
+    "profile": "ໂປຣໄຟລ໌"
+  },
+  "languages": {
+    "english": "ອັງກິດ",
+    "lao": "ລາວ"
+  },
+  "dashboard": {
+    "title": "ໜ້າຫຼັກ",
+    "subtitle": "ຍິນດີຕ້ອນຮັບ! ນີ້ແມ່ນການສຳຫຼວດແອັບຂອງທ່ານ.",
+    "refresh": "ໂຫຼດໃໝ່",
+    "stats": {
+      "totalTasks": "ວຽກງານທັງໝົດ",
+      "activeSessions": "ເຊສຊັນທີ່ເຮັດວຽກ",
+      "appUsage": "ການໃຊ້ແອັບ",
+      "featuresUsed": "ຟີເຈີທີ່ໃຊ້"
+    },
+    "recentActivity": "ກິດຈະກຳຫຼ້າສຸດ",
+    "quickActions": "ການກະທຳດ່ວນ",
+    "systemInfo": "ຂໍ້ມູນລະບົບ",
+    "actions": {
+      "openTasks": "ເປີດວຽກງານ",
+      "settings": "ການຕັ້ງຄ່າ",
+      "exportData": "ສົ່ງອອກຂໍ້ມູນ",
+      "helpCenter": "ສູນຊ່ວຍເຫຼືອ"
+    },
+    "system": {
+      "status": "ສະຖານະລະບົບ",
+      "operational": "ລະບົບທຸກອັນເຮັດວຽກປົກກະຕິ",
+      "lastUpdated": "ອັບເດດຄັ້ງສຸດທ້າຍ",
+      "performance": "ປະສິດທິພາບ",
+      "excellent": "ດີເລີດ"
+    },
+    "activity": {
+      "taskCreated": "ສ້າງວຽກງານແລ້ວ",
+      "taskCompleted": "ວຽກງານສຳເລັດແລ້ວ",
+      "settingsUpdated": "ອັບເດດການຕັ້ງຄ່າແລ້ວ",
+      "appLaunched": "ເປີດແອັບແລ້ວ",
+      "minutesAgo": "ນາທີກ່ອນ",
+      "hourAgo": "ຊົ່ວໂມງກ່ອນ",
+      "hoursAgo": "ຊົ່ວໂມງກ່ອນ"
+    }
+  },
+  "tasks": {
+    "title": "ວຽກງານ",
+    "subtitle": "ຈັດການວຽກງານຂອງທ່ານ ແລະຮັກສາຄວາມເປັນລະບຽບ",
+    "addTask": "ເພີ່ມວຽກງານ",
+    "board": {
+      "title": "ກະດານວຽກງານ",
+      "subtitle": "ຈັດອົງການງານຂອງທ່ານດ້ວຍກະດານແບບ Kanban",
+      "newTask": "+ ວຽກງານໃໜ່",
+      "emptyColumn": "ຍັງບໍ່ມີວຽກງານ",
+      "addFirstTask": "ເພີ່ມວຽກງານທຳອິດ",
+      "filterProjects": "ກັ່ນຕອງໂຄງການ",
+      "projectFilterHint": "ເລືອກໂຄງການເພື່ອກັ່ນຕອງວຽກງານ"
+    },
+    "form": {
+      "createTask": "ສ້າງວຽກງານໃໜ່",
+      "editTask": "ແກ້ໄຂວຽກງານ",
+      "title": "ສົວວຽກງານ",
+      "description": "ລາຍລະອຽງ",
+      "assignedTo": "ມອບໜຸກຜິດຊອບໃຫ້",
+      "labels": "ປ້າຍກຳກັບ",
+      "dueDate": "ວັນຄຮບກຳໜົດ",
+      "status": "ສະຖານະ",
+      "project": "ໂຄງການ",
+      "createButton": "ສ້າງວຽກງານ",
+      "saveButton": "ບັນທຶກການປ່ຽນແປງ",
+      "deleteButton": "ລຶບວຽກງານ",
+      "confirmDelete": "ຢືນຢັນການລຶບ",
+      "deleteConfirmMessage": "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການລຶບວຽກງານນີ້? ການກະທຳນີ້ບໍ່ສາມາດຍົກເລີກໄດ້.",
+      "confirmDeleteButton": "ລຶບວຽກງານ",
+      "descriptionHint": "ໃຫ້ລາຍລະອຽດເພີ່ມເຕີມເກີ່ຢວກັບວຽກງານ",
+      "assignedToHint": "ເລືອກສມາຊິກທີມເພື່ອມອບໜຸກຜິດຊອບວຽກງານນີ້",
+      "labelsHint": "ເລືອກປ້າຍກຳກັບເພື່ອຈັດຫມວດຫມູ່ວຽກງານຂອງທ່ານ",
+      "dueDateHint": "ກຳໜົດວັນຄຮບກຳໜົດສຳຫຼັບວຽກງານນີ້ (ບໍ່ຈຳເປັນ)",
+      "statusHint": "ເລືອກຫມວດຫມູ່ເພື່ອວາງວຽກງານນີ້",
+      "projectHint": "ເລືອກໂຄງການເພື່ອຈັດລຽງວຽກງານນີ້",
+      "validation": {
+        "titleRequired": "ຈຳເປັນຕ້ອງມີສົວວຽກງານ",
+        "titleMinLength": "ສົວຕ້ອງມີອງຄົນອີກ 3 ຕົວອັກສອນເບັ້ນຕົ້ນໄປ"
+      }
+    },
+    "empty": {
+      "title": "ຍັງບໍ່ມີວຽກງານ",
+      "description": "ສ້າງວຽກງານທຳອິດຂອງທ່ານເພື່ອເລີ່ມຕົ້ນການຈັດການວຽກງານ",
+      "createFirstTask": "ສ້າງວຽກງານທຳອິດຂອງທ່ານ"
+    },
+    "tips": {
+      "organize": "ຈັດລຽງ",
+      "track": "ຕິດຕາມຄວາມຄືບໜ້າ",
+      "schedule": "ກຳນົດເວລາ"
+    },
+    "features": {
+      "title": "ຄຸນສົມບັດການຈັດການວຽກງານ",
+      "manage": {
+        "title": "ຈັດການວຽກງານ",
+        "description": "ສ້າງ, ແກ້ໄຂ, ແລະຈັດລຽງວຽກງານຂອງທ່ານຢ່າງມີປະສິດທິພາບ"
+      },
+      "schedule": {
+        "title": "ກຳນົດເວລາ ແລະກຳໜົດເວລາສຸດທ້າຍ",
+        "description": "ກຳນົດວັນທີຄົບກຳໜົດ ແລະຕິດຕາມກຳໜົດເວລາສຳຄັນ"
+      },
+      "progress": {
+        "title": "ຕິດຕາມຄວາມຄືບໜ້າ",
+        "description": "ຕິດຕາມສະຖານະການເຮັດສຳເລັດ ແລະຜົນຜະລິດ"
+      }
+    },
+    "actions": {
+      "edit": "ແກ້ໄຂວຽກງານ",
+      "delete": "ລຶບວຽກງານ",
+      "move": "ຍ້າຍວຽກງານ",
+      "dragHint": "ລາກວຽກງານລະຫວ່າງຄໍລັມເພື່ອປ່ຽນສະຖານະ",
+      "clickEdit": "ຄລິກທີ່ວຽກງານເພື່ອແກ້ໄຂລາຍລະອຽດ"
+    },
+    "labels": {
+      "title": "ປ້າຍກຳກັບ",
+      "add": "ເພີ່ມປ້າຍກຳກັບ",
+      "remove": "ລົບປ້າຍກຳກັບ",
+      "manage": "ຈັດການປ້າຍກຳກັບ",
+      "addNew": "ເພີ່ມປ້າຍກຳກັບໃໝ່",
+      "noLabels": "ບໍ່ມີປ້າຍກຳກັບ",
+      "selectLabel": "ເລືອກປ້າຍກຳກັບທີ່ຈະເພີ່ມ"
+    },
+    "comments": {
+      "title": "ຄຳເຫັນ & ກິດຈະກຳ",
+      "addComment": "ເພີ່ມຄຳເຫັນ",
+      "placeholder": "ເພີ່ມຄຳເຫັນ...",
+      "postComment": "ໂພສຄຳເຫັນ",
+      "noComments": "ຍັງບໍ່ມີຄຳເຫັນ",
+      "activity": "ກິດຈະກຳ",
+      "labelAdded": "ເພີ່ມປ້າຍກຳກັບ",
+      "labelRemoved": "ລົບປ້າຍກຳກັບ",
+      "statusChanged": "ປ່ຽນສະຖານະເປັນ",
+      "taskCreated": "ສ້າງວຽກງານນີ້",
+      "taskUpdated": "ອັບເດດວຽກງານນີ້"
+    },
+    "search": {
+      "title": "ຄົ້ນຫາ & ກັ່ນຕອງ",
+      "placeholder": "ຄົ້ນຫາວຽກງານຕາມຫົວຂໍ້, ລາຍລະອຽດ, ຫຼື ຜູ້ຮັບຜິດຊອບ...",
+      "filters": "ກັ່ນຕອງ",
+      "clearFilters": "ລົບລ້າງການກັ່ນຕອງ",
+      "filterByStatus": "ກັ່ນຕອງຕາມສະຖານະ",
+      "filterByLabels": "ກັ່ນຕອງຕາມປ້າຍກຳກັບ",
+      "filterByAssignee": "ກັ່ນຕອງຕາມຜູ້ຮັບຜິດຊອບ",
+      "filterByPriority": "ກັ່ນຕອງຕາມຄວາມສຳຄັນ",
+      "noResults": "ບໍ່ພົບວຽກງານທີ່ຕົງກັບເງື່ອນໄຂການຄົ້ນຫາ",
+      "showingResults": "ສະແດງຜົນ {count} ລາຍການ"
+    },
+    "priority": {
+      "low": "ຕໍ່າ",
+      "normal": "ປົກກະຕິ",
+      "high": "ສູງ",
+      "urgent": "ຮີບດ່ວນ"
+    }
+  },
+  "projects": {
+    "title": "ໂຄງການ",
+    "subtitle": "ຈັດການໂຄງການຂອງທ່ານ ແລະຈັດລຽງວຽກງານ",
+    "form": {
+      "createProject": "ສ້າງໂຄງການໃໜ່",
+      "createNew": "ສ້າງໂຄງການໃໜ່",
+      "name": "ຊື່ໂຄງການ",
+      "description": "ລາຍລະອຽງ",
+      "category": "ປະເພດ",
+      "color": "ຊຸດສີ",
+      "manager": "ຜູ້ຈັດການໂຄງການ",
+      "project": "ໂຄງການ",
+      "createButton": "ສ້າງໂຄງການ",
+      "descriptionHint": "ໃຫ້ລາຍລະອຽດກ່ຽວກັບໂຄງການ",
+      "projectHint": "ເລືອກໂຄງການເພື່ອຈັດລຽງວຽກງານນີ້",
+      "validation": {
+        "nameRequired": "ຈຳເປັນຕ້ອງມີຊື່ໂຄງການ",
+        "nameMinLength": "ຊື່ຕ້ອງມີຢ່າງຄົນອີກ 3 ຕົວອັກສອນ"
+      }
+    },
+    "categories": {
+      "web": "ການພັດທະນາເວັບ",
+      "mobile": "ແອັບມືຖື",
+      "design": "ການອອກແບບ",
+      "marketing": "ການຕະຫລາດ",
+      "research": "ການຄົ້ນຄວ້າ",
+      "other": "ອື່ນໆ"
+    },
+    "status": {
+      "active": "ກຳລັງດຳເນີນ",
+      "completed": "ສຳເລັດແລ້ວ",
+      "onHold": "ຢຸດຊົ່ວຄາວ",
+      "cancelled": "ຍົກເລີກ"
+    }
+  },
+  "settings": {
+    "title": "ການຕັ້ງຄ່າ ແລະໂປຣໄຟລ໌",
+    "subtitle": "ຈັດການບັນຊີ ແລະການຕັ້ງຄ່າແອັບພລິເຄຊັນຂອງທ່ານ",
+    "profile": {
+      "title": "ຂໍ້ມູນໂປຣໄຟລ໌",
+      "fullName": "ຊື່ເຕັມ",
+      "email": "ທີ່ຢູ່ອີເມວ",
+      "role": "ບົດບາດ",
+      "memberSince": "ສະມາຊິກຕັ້ງແຕ່",
+      "changeAvatar": "ປ່ຽນຮູບໂປຣໄຟລ໌",
+      "saveProfile": "ບັນທຶກໂປຣໄຟລ໌"
+    },
+    "preferences": {
+      "title": "ການຕັ້ງຄ່າແອັບ",
+      "theme": "ຊຸດຮູບແບບ",
+      "language": "ພາສາ",
+      "calculatorHistory": "ຈຳກັດປະຫວັດເຄື່ອງຄິດໄລ່",
+      "notifications": "ເປີດການແຈ້ງເຕືອນ",
+      "autoSave": "ບັນທຶກອັດຕະໂນມັດ",
+      "soundEffects": "ເສັ້ງສຽງ",
+      "savePreferences": "ບັນທຶກການຕັ້ງຄ່າ"
+    },
+    "security": {
+      "title": "ຄວາມປອດໄພ ແລະຄວາມເປັນສ່ວນຕົວ",
+      "changePassword": "ປ່ຽນລະຫັດຜ່ານ",
+      "twoFactor": "ການຕັ້ງຄ່າ 2FA",
+      "exportData": "ສົ່ງອອກຂໍ້ມູນ",
+      "deleteAccount": "ລຶບບັນຊີ"
+    },
+    "support": {
+      "title": "ການສະຫນັບສະຫນູນ ແລະຂໍ້ມູນ",
+      "documentation": "ເອກະສານ",
+      "docDescription": "ຮຽນຮູ້ວິທີການໃຊ້ຟີເຈີທັງໝົດ",
+      "viewDocs": "ເບິ່ງເອກະສານ",
+      "contactSupport": "ຕິດຕໍ່ການສະຫນັບສະຫນູນ",
+      "supportDescription": "ຂໍຄວາມຊ່ວຍເຫຼືອຈາກທີມງານຂອງພວກເຮົາ",
+      "contactUs": "ຕິດຕໍ່ພວກເຮົາ",
+      "appVersion": "ເວີຊັນແອັບ",
+      "versionDescription": "ເວີຊັນ 1.0.0 (ຫຼ້າສຸດ)",
+      "checkUpdates": "ກວດສອບການອັບເດດ"
+    },
+    "themes": {
+      "light": "ສະຫວ່າງ",
+      "dark": "ມືດ",
+      "auto": "ອັດຕະໂນມັດ"
+    }
+  },
+  "home": {
+    "welcome": "ຍິນດີຕ້ອນຮັບສູ່ KrakenTasks",
+    "description": "ແອັບພລິເຄຊັນການຈັດການວຽກງານທີ່ທັນສະໄໝຂອງທ່ານ",
+    "tryTasks": "ລອງໃຊ້ວຽກງານ",
+    "gettingStarted": "ເລີ່ມຕົ້ນ",
+    "editPage": "ທ່ານສາມາດແກ້ໄຂໜ້າຫຼັກນີ້ໂດຍການແກ້ໄຂ",
+    "features": {
+      "pages": {
+        "title": "ໜ້າເວັບ",
+        "description": "ເພີ່ມໜ້າເວັບໃນໂຟນເດີ pages/ ແລະມັນຈະກາຍເປັນເສັ້ນທາງໂດຍອັດຕະໂນມັດ"
+      },
+      "components": {
+        "title": "ອົງປະກອບ",
+        "description": "ສ້າງອົງປະກອບທີ່ໃຊ້ຊ້ຳໄດ້ໃນໂຟນເດີ components/"
+      },
+      "layouts": {
+        "title": "ແບບຜັງ",
+        "description": "ປັບແຕ່ງແບບຜັງໃນໂຟນເດີ layouts/ ເພື່ອການອອກແບບທີ່ສອດຄ່ອງ"
+      }
+    },
+    "technologies": "ເຕັກໂນໂລຊີທີ່ໃຊ້"
+  },
+  "common": {
+    "loading": "ກຳລັງໂຫຼດ...",
+    "save": "ບັນທຶກ",
+    "cancel": "ຍົກເລີກ",
+    "delete": "ລຶບ",
+    "edit": "ແກ້ໄຂ",
+    "close": "ປິດ",
+    "ok": "ຕົກລົງ",
+    "yes": "ແມ່ນ",
+    "no": "ບໍ່",
+    "clear": "ລຶບລ້າງ"
+  }
+}

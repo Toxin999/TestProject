@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -8,6 +8,14 @@ export default defineNuxtConfig({
   // Netlify deployment configuration
   nitro: {
     preset: 'netlify'
+  },
+
+  // Runtime configuration for Hasura
+  runtimeConfig: {
+    public: {
+      hasuraUrl: process.env.HASURA_GRAPHQL_ENDPOINT || 'https://your-hasura-app.hasura.app/v1/graphql',
+      hasuraAdminSecret: process.env.HASURA_ADMIN_SECRET || ''
+    }
   },
 
   css: [
@@ -22,6 +30,29 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
-    '@nuxt/image'
-  ]
+    '@nuxt/image',
+    '@nuxtjs/i18n'
+  ],
+
+  // i18n configuration
+  i18n: {
+    vueI18n: './i18n.config.ts',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en.json'
+      },
+      {
+        code: 'lo',
+        iso: 'lo-LA', 
+        name: 'ລາວ',
+        file: 'lo.json'
+      }
+    ],
+    langDir: 'locales',
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default'
+  }
 })

@@ -1,0 +1,284 @@
+{
+  "app": {
+    "title": "KrakenTasks",
+    "subtitle": "Task Management & More",
+    "version": "v1.0.0"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "tasks": "Tasks",
+    "settings": "Settings & Profile",
+    "home": "Home",
+    "profile": "Profile"
+  },
+  "languages": {
+    "english": "English",
+    "lao": "ລາວ (Lao)"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Welcome back! Here's your app overview.",
+    "refresh": "Refresh",
+    "stats": {
+      "totalTasks": "Total Tasks",
+      "activeSessions": "Active Sessions",
+      "appUsage": "App Usage",
+      "featuresUsed": "Features Used"
+    },
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "systemInfo": "System Information",
+    "actions": {
+      "openTasks": "Open Tasks",
+      "settings": "Settings",
+      "exportData": "Export Data",
+      "helpCenter": "Help Center"
+    },
+    "system": {
+      "status": "System Status",
+      "operational": "All systems operational",
+      "lastUpdated": "Last Updated",
+      "performance": "Performance",
+      "excellent": "Excellent"
+    },
+    "activity": {
+      "taskCreated": "Task created",
+      "taskCompleted": "Task completed",
+      "settingsUpdated": "Settings updated",
+      "appLaunched": "App launched",
+      "minutesAgo": "minutes ago",
+      "hourAgo": "hour ago",
+      "hoursAgo": "hours ago"
+    }
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Manage your tasks and stay organized",
+    "addTask": "Add Task",
+    "board": {
+      "title": "Task Board",
+      "subtitle": "Organize your work with our Kanban-style board",
+      "newTask": "+ New Task",
+      "emptyColumn": "No tasks yet",
+      "addFirstTask": "Add first task",
+      "filterProjects": "Filter Projects",
+      "projectFilterHint": "Select a project to filter tasks"
+    },
+    "form": {
+      "createTask": "Create New Task",
+      "editTask": "Edit Task",
+      "title": "Task Title",
+      "description": "Description",
+      "assignedTo": "Assign To",
+      "labels": "Labels/Tags",
+      "priority": "Priority",
+      "dueDate": "Due Date",
+      "status": "Status",
+      "project": "Project",
+      "createButton": "Create Task",
+      "saveButton": "Save Changes",
+      "deleteButton": "Delete Task",
+      "confirmDelete": "Confirm Delete",
+      "deleteConfirmMessage": "Are you sure you want to delete this task? This action cannot be undone.",
+      "confirmDeleteButton": "Delete Task",
+      "descriptionHint": "Provide additional details about the task",
+      "assignedToHint": "Select a team member to assign this task",
+      "labelsHint": "Choose labels to categorize your task",
+      "dueDateHint": "Set a deadline for this task (optional)",
+      "statusHint": "Choose which column to place this task",
+      "projectHint": "Select a project to organize this task",
+      "validation": {
+        "titleRequired": "Task title is required",
+        "titleMinLength": "Title must be at least 3 characters long"
+      }
+    },
+    "empty": {
+      "title": "No Tasks Yet",
+      "description": "Create your first task to get started with task management",
+      "createFirstTask": "Create Your First Task"
+    },
+    "tips": {
+      "organize": "Organize",
+      "track": "Track Progress",
+      "schedule": "Schedule"
+    },
+    "features": {
+      "title": "Task Management Features",
+      "manage": {
+        "title": "Manage Tasks",
+        "description": "Create, edit, and organize your tasks efficiently"
+      },
+      "schedule": {
+        "title": "Schedule & Deadlines",
+        "description": "Set due dates and track important deadlines"
+      },
+      "progress": {
+        "title": "Track Progress",
+        "description": "Monitor completion status and productivity"
+      }
+    },
+    "actions": {
+      "edit": "Edit Task",
+      "delete": "Delete Task",
+      "move": "Move Task",
+      "dragHint": "Drag tasks between columns to change status",
+      "clickEdit": "Click on a task to edit details"
+    },
+    "labels": {
+      "title": "Labels",
+      "add": "Add Label",
+      "remove": "Remove Label",
+      "manage": "Manage Labels",
+      "addNew": "Add New Label",
+      "noLabels": "No labels assigned",
+      "selectLabel": "Select a label to add"
+    },
+    "comments": {
+      "title": "Comments & Activity",
+      "addComment": "Add Comment",
+      "placeholder": "Add a comment...",
+      "postComment": "Post Comment",
+      "noComments": "No comments yet",
+      "activity": "Activity",
+      "labelAdded": "added label",
+      "labelRemoved": "removed label",
+      "statusChanged": "changed status to",
+      "taskCreated": "created this task",
+      "taskUpdated": "updated this task"
+    },
+    "search": {
+      "title": "Search & Filter",
+      "placeholder": "Search tasks by title, description, or assignee...",
+      "filters": "Filters",
+      "clearFilters": "Clear Filters",
+      "filterByStatus": "Filter by Status",
+      "filterByLabels": "Filter by Labels",
+      "filterByAssignee": "Filter by Assignee",
+      "filterByPriority": "Filter by Priority",
+      "noResults": "No tasks found matching your search criteria",
+      "showingResults": "Showing {count} results"
+    },
+    "priority": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "urgent": "Urgent"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Manage your projects and organize tasks",
+    "form": {
+      "createProject": "Create New Project",
+      "createNew": "Create New Project",
+      "name": "Project Name",
+      "description": "Description",
+      "category": "Category",
+      "color": "Color Theme",
+      "manager": "Project Manager",
+      "project": "Project",
+      "createButton": "Create Project",
+      "descriptionHint": "Provide details about the project",
+      "projectHint": "Select a project to organize this task",
+      "validation": {
+        "nameRequired": "Project name is required",
+        "nameMinLength": "Name must be at least 3 characters long"
+      }
+    },
+    "categories": {
+      "web": "Web Development",
+      "mobile": "Mobile App",
+      "design": "Design",
+      "marketing": "Marketing",
+      "research": "Research",
+      "other": "Other"
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "onHold": "On Hold",
+      "cancelled": "Cancelled"
+    }
+  },
+  "settings": {
+    "title": "Settings & Profile",
+    "subtitle": "Manage your account and application preferences",
+    "profile": {
+      "title": "Profile Information",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "role": "Role",
+      "memberSince": "Member Since",
+      "changeAvatar": "Change Avatar",
+      "saveProfile": "Save Profile"
+    },
+    "preferences": {
+      "title": "App Preferences",
+      "theme": "Theme",
+      "language": "Language",
+      "calculatorHistory": "Calculator History Limit",
+      "notifications": "Enable Notifications",
+      "autoSave": "Auto-save Data",
+      "soundEffects": "Sound Effects",
+      "savePreferences": "Save Preferences"
+    },
+    "security": {
+      "title": "Security & Privacy",
+      "changePassword": "Change Password",
+      "twoFactor": "2FA Settings",
+      "exportData": "Export Data",
+      "deleteAccount": "Delete Account"
+    },
+    "support": {
+      "title": "Support & Information",
+      "documentation": "Documentation",
+      "docDescription": "Learn how to use all features",
+      "viewDocs": "View Docs",
+      "contactSupport": "Contact Support",
+      "supportDescription": "Get help from our team",
+      "contactUs": "Contact Us",
+      "appVersion": "App Version",
+      "versionDescription": "v1.0.0 (Latest)",
+      "checkUpdates": "Check Updates"
+    },
+    "themes": {
+      "light": "Light",
+      "dark": "Dark",
+      "auto": "Auto"
+    }
+  },
+  "home": {
+    "welcome": "Welcome to KrakenTasks",
+    "description": "Your modern task management application",
+    "tryTasks": "Try Tasks",
+    "gettingStarted": "Getting Started",
+    "editPage": "You can edit this main page by modifying",
+    "features": {
+      "pages": {
+        "title": "Pages",
+        "description": "Add more pages in the pages/ folder and they will automatically become routes"
+      },
+      "components": {
+        "title": "Components",
+        "description": "Create reusable components in the components/ folder"
+      },
+      "layouts": {
+        "title": "Layouts",
+        "description": "Customize layouts in the layouts/ folder for consistent design"
+      }
+    },
+    "technologies": "Technologies Used"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No",
+    "clear": "Clear"
+  }
+}

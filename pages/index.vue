@@ -3,24 +3,26 @@ useHead({
   title: 'Home'
 })
 
+const { t } = useI18n()
+
 const features = [
   {
-    title: 'Pages',
+    title: t('home.features.pages.title'),
     icon: 'mdi-file-document-outline',
     color: 'primary',
-    description: 'Add more pages in the pages/ folder and they will automatically become routes'
+    description: t('home.features.pages.description')
   },
   {
-    title: 'Components',
+    title: t('home.features.components.title'),
     icon: 'mdi-puzzle-outline',
     color: 'success',
-    description: 'Create reusable components in the components/ folder'
+    description: t('home.features.components.description')
   },
   {
-    title: 'Layouts',
+    title: t('home.features.layouts.title'),
     icon: 'mdi-palette-outline',
     color: 'info',
-    description: 'Customize layouts in the layouts/ folder for consistent design'
+    description: t('home.features.layouts.description')
   }
 ]
 
@@ -44,20 +46,20 @@ const technologies = [
         >
           <v-card-text>
             <div class="text-h2 text-primary font-weight-bold mb-4">
-              Welcome to My Nuxt App
+              {{ $t('home.welcome') }}
             </div>
             <div class="text-h5 text-grey-darken-1 mb-6">
-              Your modern web application built with Nuxt 3 and Vuetify
+              {{ $t('home.description') }}
             </div>
             <v-btn
-              to="/calculatorApp"
+              to="/tasks"
               color="primary"
               size="large"
               variant="elevated"
-              prepend-icon="mdi-calculator"
+              prepend-icon="mdi-clipboard-text"
               class="ma-2"
             >
-              Try Calculator
+              {{ $t('home.tryTasks') }}
             </v-btn>
           </v-card-text>
         </v-card>
@@ -69,10 +71,10 @@ const technologies = [
       <v-col cols="12" md="10" lg="8">
         <v-card elevation="2">
           <v-card-title class="text-h4 text-center text-primary">
-            Getting Started
+            {{ $t('home.gettingStarted') }}
           </v-card-title>
           <v-card-subtitle class="text-center mb-4">
-            You can edit this main page by modifying <code class="bg-grey-lighten-2 pa-1 rounded">pages/index.vue</code>
+            {{ $t('home.editPage') }} <code class="bg-grey-lighten-2 pa-1 rounded">pages/index.vue</code>
           </v-card-subtitle>
           
           <v-card-text>
@@ -113,7 +115,7 @@ const technologies = [
         <v-card elevation="2">
           <v-card-title class="text-h4 text-center text-primary">
             <v-icon left>mdi-rocket-launch</v-icon>
-            Technologies Used
+            {{ $t('home.technologies') }}
           </v-card-title>
           
           <v-card-text>
